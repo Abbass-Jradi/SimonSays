@@ -40,3 +40,21 @@ function generateSequence() {
     var audio = new Audio("sounds/" + colorToShow + ".mp3");
     audio.play();
 }
+
+/* Identify which button was pressed */
+function reply_click(clicked_id) {
+    setTimeout(function () {
+        document.getElementById(clicked_id).style.backgroundColor = "grey";
+    }, 500);
+
+    setTimeout(function () {
+        document.getElementById(clicked_id).style.backgroundColor = clicked_id;
+    }, 900);
+
+    var audio = new Audio("sounds/" + clicked_id + ".mp3");
+    audio.play();
+
+    playerColors.push(clicked_id);
+
+    confirm();        
+}
