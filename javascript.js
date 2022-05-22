@@ -58,3 +58,23 @@ function reply_click(clicked_id) {
 
     confirm();        
 }
+
+/* Check pressed answer */
+function confirm() {
+    
+    console.log("after confirm");
+    console.log(playerColors, sequenceColors);
+    if (playerColors[temp] === sequenceColors[temp])
+    {   temp++;
+        if (temp === sequenceColors.length){
+            temp = 0;
+            playerColors= [];
+            setTimeout(function(){generateSequence()}, 1500);
+        }
+    }
+    else{
+        document.getElementById('main-prompt').innerHTML = "Game Over! Press any key to continue";
+        document.getElementsByTagName('html')[0].style.backgroundColor = "red";
+        startAgain();
+    }
+}
