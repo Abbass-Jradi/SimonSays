@@ -8,5 +8,7 @@ html {
   background-color:rgb(3, 3, 63); 
 }
 
+#main-prompt {
+  width: 100%;
 
-  
+}
