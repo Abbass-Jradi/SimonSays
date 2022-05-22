@@ -78,3 +78,12 @@ function confirm() {
         startAgain();
     }
 }
+
+/* Start over */
+function startAgain(){
+    level = 0;
+    sequenceColors = [];
+    playerColors = [];
+    isStarted = false;
+    window.addEventListener('keydown', start);
+}
