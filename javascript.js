@@ -17,3 +17,26 @@ function start() {
         isStarted = true;
     }
 }
+
+/* Generate sequence */
+function generateSequence() {
+    level = level + 1;
+
+    var randNumber = Math.floor(Math.random() * 4);
+    var colorToShow = colors[randNumber];
+
+    sequenceColors.push(colorToShow);
+
+    document.getElementById('main-prompt').innerHTML = "Level: " + level;
+
+    setTimeout(function () {
+        document.getElementById(colorToShow).style.backgroundColor = "white";
+    }, 500);
+
+    setTimeout(function () {
+        document.getElementById(colorToShow).style.backgroundColor = colorToShow;
+    }, 900);
+
+    var audio = new Audio("sounds/" + colorToShow + ".mp3");
+    audio.play();
+}
