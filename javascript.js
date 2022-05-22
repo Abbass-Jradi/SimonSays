@@ -61,7 +61,6 @@ function reply_click(clicked_id) {
 
 /* Check pressed answer */
 function confirm() {
-    
     console.log("after confirm");
     console.log(playerColors, sequenceColors);
     if (playerColors[temp] === sequenceColors[temp])
