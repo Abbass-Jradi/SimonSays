@@ -46,3 +46,37 @@ html {
   gap: 40px;
 }
 
+/* Setsof Buttons */
+
+.one {
+    width: 175px;
+    height: 175px;
+    background-color: green;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .two {
+    width: 175px;
+    height: 175px;
+    background-color: rgb(255, 1, 1);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .three {
+    width: 175px;
+    height: 175px;
+    background-color: rgb(221, 255, 0);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .four {
+    width: 175px;
+    height: 175px;
+    background-color: rgb(0, 45, 128);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
